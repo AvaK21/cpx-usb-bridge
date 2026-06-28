@@ -2,7 +2,13 @@
 
 A minimal serial protocol for sending state-change commands from a PC to an Adafruit Circuit Playground Express (CPX) over USB, using a dedicated `usb_cdc.data` channel (not the REPL console).
 
-The CPX receives a command (`idle`, `alert`, `cool`), updates its onboard NeoPixels, and writes a confirmation back to the PC. Built as a foundation for piping computer-vision output into physical state changes on the board.
+The CPX receives a command (`idle`, `alert`, `cool`), updates its onboard NeoPixels, and writes a confirmation back to the PC. 
+
+## Goal
+
+A reusable, stable USB bridge between CPX and PC — step 1 toward more 
+complex projects, starting with piping computer-vision output into CPX 
+state changes.
 
 ## Why this isn't just `print()`/`input()`
 
