@@ -35,7 +35,7 @@ def apply_state(state):
 def read_usb():
     """Line read from USB serial."""
     global buf
-    #IF there are bytes waiting in the buffer
+    #If there are bytes waiting
     if serial.in_waiting:
         #Read the number of bytes waiting and add them to the buffer
         buf += serial.read(serial.in_waiting)
